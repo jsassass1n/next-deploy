@@ -40,7 +40,7 @@ export async function createInvoice(prevState: State, formData: any) {
     status: formData.get("status"),
   });
 
-  // If form validation fails, return errors early. Otherwise, continue.
+  // If form validation fails, return errors early. Other. wise, continue.
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
